@@ -1,0 +1,78 @@
+https://sql-academy.org/ru/sandbox - ссылка на песочницу
+
+
+
+select id, name from Company
+
+# select * from Passenger
+
+# select * from Pass_in_trip WHERE id>10
+
+# select * from Pass_in_trip WHERE id BETWEEN 10 and 20
+
+#select * from Passenger WHERE id IN (10, 12, 40)
+
+#select * from Pass_in_trip WHERE trip LIKE "%7"
+
+#select * from Trip limit 10
+
+#select * from Company ORDER BY id DESC
+
+#select DISTINCT town_from from Trip
+
+#select COUNT(Name) from Passenger
+
+#select SUM(id) from Company
+
+#select AVG(id) from Trip
+
+#select MIN(id) from Pass_in_trip
+
+#select MAX(id) from Pass_in_trip
+
+#select town_from from Trip GROUP BY town_from
+
+#select trip from Pass_in_trip GROUP BY trip HAVING trip<2000
+
+#select COUNT(town_from), town_from from Trip GROUP BY town_from
+
+#select SUM(trip), trip from Pass_in_trip GROUP BY trip
+
+#select AVG(trip), trip from Pass_in_trip GROUP BY trip
+
+#select MIN(trip), trip from Pass_in_trip GROUP BY trip
+
+#select MAX(trip), trip from Pass_in_trip GROUP BY trip
+
+#select MAX(trip) AS max, trip from Pass_in_trip GROUP BY trip
+
+#select MAX(trip) AS maximum, trip from Pass_in_trip GROUP BY trip
+
+
+
+# JOINы
+
+-- SELECT * FROM Trip;
+-- JOIN Pass_in_trip ON Trip.id = Pass_in_trip.trip
+-- JOIN Passenger ON Pass_in_trip.passenger = Passenger.id;
+
+
+# INSERTы
+
+-- INSERT INTO Company (id, name)
+-- VALUES
+-- (6, 'Pobeda'),
+-- (7, 'Emerates');
+
+
+
+# UPDATE
+
+UPDATE Company SET id=1, name='America_Airlines' WHERE id=1;
+
+select * from Company;
+
+# DELETE
+
+DELETE FROM Company WHERE id=5;
+SELECT * FROM Company;

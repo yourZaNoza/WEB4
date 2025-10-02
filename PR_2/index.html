@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>JavaScript</title>
+</head>
+<body>
+    <div class="main">
+
+        <h1>Разогревочные задания</h1>
+        <button class="" onclick="rectangleArea(2, 3)">Площадь прямоугольника</button>
+        <button class="" onclick="squarePerimeter(2)">Периметр квадрата</button>
+        <button class="" onclick="FahrenheitTemperature(10)">Температура по Фаренгейту</button>
+        <button class="" onclick="divisionRemainder(6, 3)">Остаток от деления</button>  
+        <button class="" onclick="multiplation(4, 5)">Умножение двух чисел</button>  
+        <button class="" onclick="evenNumbers(4)">Проверка на четность</button>  
+        <button class="" onclick="timeTranslator(3)">Перевод времени</button>  
+        <button class="" onclick="numberCompare(1, 2)">Сравнение двух чисел</button>  
+        <button class="" onclick="userAge(2007)">Возраст пользователя</button>  
+        <button class="" onclick="summation(3, 3)">Простое суммирование</button>  
+
+        <h1>Циклы</h1>
+        <button class="" onclick="oneToTen()">Вывести числа от 1 до 10</button>
+        <button class="" onclick="oneToN(11)">Сумма чисел от 1 до N</button>
+        <button class="" onclick="factorial(5)">Факториал числа</button>
+        <button class="" onclick="evenPrinter()">Вывод четных чисел</button>  
+        <button class="" onclick="multiplationOnFive()">Таблица умножения на 5</button>  
+        <button class="" onclick="sumDivRemainderOnThree()">Сумма чисел кратных 3</button>  
+        <button class="" onclick="reverseCounter()">Обратный отчёт</button>  
+        <button class="" onclick="multyFromOneToN(3)">Произведение чисел от 1 до N</button>  
+        <button class="" onclick="divRemainderOnSeven()">Числа, кратные 7</button>  
+        <button class="" onclick="symbolPrinter('hello world', 1)">Печать символов</button> 
+
+        <h1>Условия</h1>
+        <button class="tasks" onclick="positiveOrNot(-3)">Проверка числа на положительность</button>
+        <button class="tasks" onclick="scalation(99)">Оценка по баллам</button>
+        <button class="tasks" onclick="divisionByThree(27)">Проверка деления на 3</button>
+        <button class="tasks" onclick="evenOrNot(20)">Четное или нечетное</button>
+        <button class="tasks" onclick="getCompare(18, 8)">Наибольшее из двух чисел</button>
+        <button class="tasks" onclick="visokosYear(2000)">Проверка високосного года</button>
+        <button class="tasks" onclick="temperatureCheck(11)">Проверка температуры</button>
+        <button class="tasks" onclick="divisionByFiveAndEleven(55)">Число делится на 5 и 11</button>
+        <button class="tasks" onclick="numberEquals(20, 10)">Равны ли числа</button>
+        <button class="tasks" onclick="checkSymbol('x')">Проверка символа</button>
+        
+        <h1>Массивы</h1>
+        <button class="tasks" onclick="printEachElement([1, 2, 3, 4, 5])">Вывести каждый элемент массива</button>
+        <button class="tasks" onclick="findFirstEven([1, 3, 4, 6, 7])">Найти первый чётный элемент</button>
+        <button class="tasks" onclick="addToEnd([1, 2, 3], 4)">Добавить элемент в конец массива</button>
+        <button class="tasks" onclick="addToStart([1, 2, 3], 0)">Добавить элемент в начало массива</button>
+        <button class="tasks" onclick="doubleArray([1, 2, 3])">Удвоить значения массива</button>
+        <button class="tasks" onclick="removeLastElement([1, 2, 3])">Удалить последний элемент массива</button>
+        <button class="tasks" onclick="removeFirstElement([1, 2, 3])">Удалить первый элемент массива</button>
+        <button class="tasks" onclick="mergeArrays([1, 2], [3, 4])">Объединить два массива</button>
+        <button class="tasks" onclick="removeByIndex([1, 2, 3, 4], 1)">Удалить элемент по индексу 1</button>
+        <button class="tasks" onclick="extractSubarray([1, 2, 3, 4, 5], 1, 4)">Извлечь подмассив с 1 по 4</button>
+        <button class="tasks" onclick="arrayToString([1, 2, 3])">Преобразовать массив в строку</button>
+        <button class="tasks" onclick="stringToArray('hello')">Преобразовать строку в массив</button>
+        <button class="tasks" onclick="sumArray([1, 2, 3, 4])">Найти сумму элементов массива</button>
+        <button class="tasks" onclick="increaseByTen([1, 2, 3])">Увеличить числа массива на 10</button>
+        <button class="tasks" onclick="findFirstNegativeIndex([1, -2, 3, -4])">Найти индекс первого отрицательного числа</button>
+      
+
+        <h1>Объекты</h1>
+
+        <button class="tasks" onclick="createPerson()">Создать объект с именем и возрастом</button>
+        <button class="tasks" onclick="addCity()">Добавить свойство city</button>
+        <button class="tasks" onclick="removeAge()">Удалить свойство age</button>
+        <button class="tasks" onclick="changeName()">Изменить имя на "Пётр"</button>
+        <button class="tasks" onclick="hasProperty({ name: 'Зоя', age: 18 }, 'age')">Проверить наличие свойства age</button>
+        <button class="tasks" onclick="getPropertyValue({ name: 'Зоя', age: 18 }, 'name')">Получить значение свойства name</button>
+        <button class="tasks" onclick="compareObjects({ name: 'Зоя', age: 18 }, { name: 'Зоя', age: 18 })">Сравнить два одинаковых объекта</button>
+        <button class="tasks" onclick="iterateProperties()">Вывести все свойства объекта</button>
+    </div>
+</body>
+</html>

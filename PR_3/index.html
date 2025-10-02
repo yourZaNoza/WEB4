@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./style.css">
+    <title>DOM Структура</title>
+</head>
+<body>
+    <div class="main">
+
+        <h1>Блок №1</h1>
+        <!-- 1 -->
+        <div>
+            <h3 id="header">Исходный заголовок</h3>
+            <button onclick="changeHeader()" class="container">Изменить заголовок</button>
+        </div>
+        <!-- 2 -->
+        <div class="box">
+        </div>
+        <!-- 3 -->
+        <div>
+            <input type="text" id="inputField" placeholder="Введите текст..." class="container">
+            <div id="output"></div>
+        </div>
+        <!-- 4 -->
+        <div id="backgroundBox" class="box">Дважды кликнуть сюда
+        </div>
+        <!-- 5 -->
+        <div>
+            <input type="checkbox" id="agreeCheckbox">
+            <label for="agreeCheckbox">Я согласен с правилами</label>
+            <button id="submitButton" disabled>Отправить</button>
+        </div>
+        <!-- 6 -->
+        <div id="windowSize">
+            Ширина: <span id="width">0</span>px,
+            Высота: <span id="height">0</span>px
+        </div>
+        <!-- 7 -->
+        <div>
+            <a href="#" id="link">Исходный текст ссылки</a>
+        </div>
+        <!-- 8 -->
+        <div id="hideMe">
+            Скрываемся!
+        </div>
+        <!-- 9 -->
+        <div>
+            <input type="text" id="textField" placeholder="Введите текст (макс. 10 знаков)" class="container">
+        </div>
+        <!-- 10 -->
+        <div>
+            <div id="toggleBox" class="inactive">Состояние: неактивно</div>
+            <button id="toggleButton">Переключить состояние</button>
+        </div>
+
+        <h1>Блок №2</h1>
+        <!-- 1 -->
+        <!-- 2 -->
+        <div id="example"> 
+            Это элемент с id="example".
+        </div>
+        <!-- 3 -->
+        <div>
+            <button class="button active">Кнопка активности</button>
+        </div>
+        <!-- 5 -->
+        <div>
+            <h3 id="header2">Исходный заголовок</h3>
+        </div> 
+        <!-- 6 -->
+        <button id="myButton">Нажми меня</button>
+        <!-- 7 -->
+        <div>
+            <ul id="myList">
+                <li>Первый элемент</li>
+                <li>Второй элемент</li>
+            </ul>
+        </div>
+        <!-- 8 -->
+        <div>
+            <div>Первый элемент</div>
+            <div id="deleteMe">Этот элемент будет удалён</div>
+            <div>Последний элемент</div>
+        </div>
+        <!-- 10 -->
+         <div>
+            <p class="highlight">Первый текст</p>
+            <div class="highlight">Второй текст</div>
+         </div>
+
+        <h1>Блок №3</h1>
+        <!-- 1 -->
+        <div>
+            <div class="item">Исходный текст 1</div>
+            <div class="item">Исходный текст 2</div>
+            <div class="item">Исходный текст 3</div>
+        </div>
+        <!-- 2 -->
+        <ul id="productList"></ul>
+        <!-- 4 -->
+        <div id="tableContainer"></div>
+        
+        <h1>Блок №4</h1>
+        <div class="gallery" id="gallery"></div>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>

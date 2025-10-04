@@ -127,3 +127,109 @@ body {
     transform: scale(1);
   }
 }
+
+/* form */
+
+.form__container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 1390px;
+  height: 535px;
+  background-color: #d2cfe4;
+  border-radius: 32px;
+  box-shadow: 6px 8px 10px #e4e3ed;
+  margin-top: 64px;
+  padding: 0px;
+}
+
+.form__container_textBox {
+  width: 744px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+}
+
+.form__container_boldText {
+  margin-top: 116px;
+  margin-left: 193px;
+  padding-bottom: 9px;
+  font-weight: 400;
+  font-size: 42px;
+  color: #000000;
+}
+
+.form__container_thinText {
+  margin-left: 115px;
+  padding-bottom: 82px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+
+/* form image */
+
+.form__container_image {
+  position: relative;
+}
+
+.form__container_image img {
+  position: absolute;
+  bottom: 42px;
+}
+
+/* form events */
+
+.email-input-container {
+  display: flex;
+  width: 400px;
+  margin-bottom: 20px;
+  margin-left: 150px;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#email-input {
+  flex: 1;
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: white;
+}
+
+#sign-up-button {
+  padding: 15px 25px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+#sign-up-button:hover {
+  background: #333;
+}
+
+.success-message {
+  display: none;
+  background: #4a4a7a;
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.success-message h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.success-message p {
+  font-size: 16px;
+  opacity: 0.9;
+}

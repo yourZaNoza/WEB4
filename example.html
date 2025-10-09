@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>California</title>
+    <style>
+      /* Общие стили */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f5f5f5;
+        color: #333;
+      }
+
+      /* Шапка */
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        background-color: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .header__logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #4a4a7a;
+      }
+
+      .header__nav {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+      }
+
+      .header__nav_link {
+        font-weight: 500;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .header__icon {
+        cursor: pointer;
+      }
+
+      /* Блок поиска */
+      .searcher__container {
+        text-align: center;
+        padding: 50px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .searcher__headline {
+        font-size: 36px;
+        margin-bottom: 30px;
+        color: #333;
+      }
+
+      .search-container {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 40px;
+      }
+
+      .search-icon {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+      }
+
+      #search-input {
+        width: 100%;
+        max-width: 500px;
+        padding: 15px 20px 15px 50px;
+        border: 2px solid #ddd;
+        border-radius: 50px;
+        font-size: 16px;
+        outline: none;
+      }
+
+      .bubbles-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .bubble {
+        padding: 10px 20px;
+        border: 2px solid #ddd;
+        border-radius: 50px;
+        background-color: white;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+
+      .bubble:hover {
+        border-color: #333;
+      }
+
+      /* Блок подписки */
+      .form__container {
+        background: linear-gradient(135deg, #a89cff, #c4b5ff);
+        border-radius: 20px;
+        padding: 50px 20px;
+        margin: 50px 20px;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+
+      .form__container_textBox {
+        flex: 1;
+        min-width: 300px;
+        text-align: center;
+      }
+
+      .form__container_boldText {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: #333;
+      }
+
+      .form__container_thinText {
+        font-size: 16px;
+        color: #666;
+        margin-bottom: 25px;
+      }
+
+      .email-input-container {
+        display: flex;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      #email-input-subscribe {
+        flex: 1;
+        padding: 15px 20px;
+        border: 2px solid #ddd;
+        border-radius: 50px 0 0 50px;
+        font-size: 16px;
+        outline: none;
+      }
+
+      #sign-up-button {
+        padding: 15px 25px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 0 50px 50px 0;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .form__container_image {
+        flex: 1;
+        min-width: 300px;
+        text-align: center;
+      }
+
+      .form__container_image img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Адаптивные стили */
+      @media (max-width: 768px) {
+        .header__nav {
+          display: none;
+        }
+
+        .searcher__headline {
+          font-size: 28px;
+        }
+
+        .form__container {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .email-input-container {
+          flex-direction: column;
+        }
+
+        #email-input-subscribe {
+          border-radius: 50px;
+          margin-bottom: 10px;
+        }
+
+        #sign-up-button {
+          border-radius: 50px;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="header__menu">
+        <img src="assets/burger_menu.svg" alt="Menu" width="24" />
+      </div>
+      <div class="header__logo">CALIFORNIA</div>
+      <ul class="header__nav">
+        <li class="header__nav_link">ALL PRODUCTS</li>
+        <li class="header__nav_link">
+          SOLUTIONS <img src="assets/down.svg" alt="Dropdown" width="12" />
+        </li>
+        <li class="header__nav_link">ABOUT</li>
+        <li class="header__nav_link">SUPPORT</li>
+      </ul>
+      <div class="header__icon">
+        <img src="assets/search.svg" alt="Search" width="24" />
+      </div>
+      <div class="header__icon">
+        <img src="assets/cart.svg" alt="Cart" width="24" />
+      </div>
+    </div>
+
+    <!-- Search Section -->
+    <div class="searcher__container">
+      <h1 class="searcher__headline">Looking for anything else?</h1>
+      <div class="search-container">
+        <img src="assets/search.svg" alt="Search" class="search-icon" />
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search keyword"
+          autocomplete="off"
+        />
+      </div>
+      <div class="bubbles-container" id="bubbles-container">
+        <div class="bubble" data-name="iPhone">iPhone</div>
+        <div class="bubble" data-name="Charger">Charger</div>
+        <div class="bubble" data-name="Gift">Gift</div>
+        <div class="bubble" data-name="Google Pixel 3">Google Pixel 3</div>
+        <div class="bubble" data-name="Keyboard">Keyboard</div>
+        <div class="bubble" data-name="13 Pro Max">13 Pro Max</div>
+        <div class="bubble" data-name="iPhone 12">iPhone 12</div>
+        <div class="bubble" data-name="Laptop">Laptop</div>
+        <div class="bubble" data-name="Mobile">Mobile</div>
+      </div>
+    </div>
+
+    <!-- Form Section -->
+    <div class="form__container">
+      <div class="form__container_textBox">
+        <div class="form__container_boldText">Never miss a thing</div>
+        <div class="form__container_thinText">
+          Sign up for texts to be notified about our best offers on the perfect
+          gifts.
+        </div>
+        <div class="email-input-container">
+          <input
+            type="email"
+            id="email-input-subscribe"
+            placeholder="Your email"
+          />
+          <button id="sign-up-button">Sign up</button>
+        </div>
+      </div>
+      <div class="form__container_image">
+        <img src="assets/image.svg" alt="Illustration" />
+      </div>
+    </div>
+
+    <script>
+      // Поиск по пузырькам
+      document
+        .getElementById("search-input")
+        .addEventListener("input", function () {
+          const searchTerm = this.value.trim().toLowerCase();
+          const bubbles = document.querySelectorAll(".bubble");
+
+          bubbles.forEach((bubble) => {
+            const bubbleName = bubble.getAttribute("data-name").toLowerCase();
+            bubble.style.display = bubbleName.includes(searchTerm)
+              ? "block"
+              : "none";
+          });
+        });
+
+      // Подписка на рассылку
+      document
+        .getElementById("sign-up-button")
+        .addEventListener("click", function () {
+          const emailInput = document.getElementById("email-input-subscribe");
+          const email = emailInput.value.trim();
+
+          if (email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            alert(`You have successfully subscribed with email: ${email}`);
+            emailInput.value = "";
+          } else {
+            alert("Please enter a valid email address.");
+          }
+        });
+    </script>
+  </body>
+</html>

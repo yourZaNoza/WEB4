@@ -10,7 +10,7 @@
     <div class="main">
       <!--header-->
       <div class="header">
-        <!-- <div class="header__icon"><img src=".\assets\burger_menu.svg" /></div> -->
+        <div class="header__menu"><img src=".\assets\burger_menu.svg" /></div>
         <div class="header__logo"><img src=".\assets\logo.svg" /></div>
         <div class="header__nav">
           <li class="header__nav_link">ALL PRODUCTS</li>
@@ -20,9 +20,30 @@
           <li class="header__nav_link">ABOUT</li>
           <li class="header__nav_link">SUPPORT</li>
         </div>
-        <div class="header__icon"><img src=".\assets\search.svg" /></div>
-        <div class="header__icon"><img src=".\assets\cart.svg" /></div>
+        <div class="header__icons">
+          <div class="header__icon"><img src=".\assets\search.svg" /></div>
+          <div class="header__icon"><img src=".\assets\cart.svg" /></div>
+        </div>
       </div>
+
+      <!-- burger-menu -->
+      <div class="overlay" id="overlay">
+        <div class="menu">
+          <div class="menu__close" id="menuClose">
+            <img src=".\assets\close.svg" />
+          </div>
+          <div class="menu__container">
+            <div class="menu__logo"><img src=".\assets\logo__white.svg" /></div>
+            <ul class="menu__nav">
+              <li class="menu__nav_item">ALL PRODUCTS</li>
+              <li class="menu__nav_item">SOLUTIONS</li>
+              <li class="menu__nav_item">ABOUT</li>
+              <li class="menu__nav_item">SUPPORT</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       <!--searcher-->
       <div class="searcher__container">
         <h1 class="searcher__headline">Looking for anything else?</h1>
@@ -47,7 +68,7 @@
           <div class="bubble" data-name="Mobile">Mobile</div>
         </div>
       </div>
-      <!--Form-->
+      <!--form-->
       <div class="form__container">
         <div class="form__container_textBox">
           <div class="form__container_boldText">Never miss a thing</div>
@@ -56,24 +77,18 @@
             perfect gifts.
           </div>
           <div class="email-input-container">
-              <input
-                type="email"
-                id="email-input"
-                placeholder="Your email"
-              />
-              <button id="sign-up-button">Sign up</button>
-            </div>
+            <input type="email" id="email-input" placeholder="Your email" />
+            <button id="sign-up-button">Sign up</button>
 
             <div class="success-message" id="success-message">
               <h2>Вы подписаны</h2>
               <p>Мы отправили сообщение на почту<br />xxxx@gmail.com</p>
             </div>
           </div>
-          <div class="form__container_image">
-            <img src=".\assets\image.svg" />
-          </div>
         </div>
-        
+        <div class="form__container_image">
+          <img src=".\assets\image.svg" />
+        </div>
       </div>
     </div>
     <script src="script.js"></script>

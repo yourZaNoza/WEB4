@@ -1,3 +1,22 @@
+// Бургер меню
+
+const menuButton = document.querySelector(".header__menu");
+const overlay = document.getElementById("overlay");
+const menuClose = document.getElementById("menuClose");
+menuButton.addEventListener("click", () => {
+  overlay.style.display = "flex";
+});
+
+menuClose.addEventListener("click", () => {
+  overlay.style.display = "none";
+});
+
+overlay.addEventListener("click", (event) => {
+  if (event.target === overlay) {
+    overlay.style.display = "none";
+  }
+});
+
 // Функция фильтрации
 
 const searchInput = document.getElementById("search-input");
@@ -30,9 +49,8 @@ signUpButton.addEventListener("click", () => {
   const email = emailInput.value.trim();
 
   if (email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    successMessage.querySelector(
-      "p"
-    ).textContent = `Мы отправили сообщение на почту\n${email}`;
+    successMessage.querySelector("p").innerHTML =
+      "Мы отправили сообщение на почту <br>" + `${email}`;
     successMessage.style.display = "block";
     emailInput.value = "";
   } else {

@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
-app.use(express.json()); // для поддержки JSON-формата
+app.use(express.json());
 
 const storages = [
   { id: 1, name: "John", age: 15 },
@@ -46,7 +46,6 @@ app.put("/data/:id", (req, res) => {
     return res.status(404).json({ error: "Запись не найдена" });
   }
 
-  // Обновляем только переданные поля
   if (name !== undefined) storages[index].name = name;
   if (age !== undefined) storages[index].age = age;
 

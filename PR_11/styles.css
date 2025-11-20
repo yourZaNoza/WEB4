@@ -1,0 +1,110 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #222;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #444;
+  border: 1px solid red;
+  border-radius: 4px;
+}
+
+.characters-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+.character-card {
+  display: flex;
+  background-color: #333;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+}
+
+.character-card:hover {
+  transform: translateY(-2px);
+}
+
+.character-card img {
+  width: 150px;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.character-info {
+  padding: 15px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.character-info h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: white;
+}
+
+.status-species {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+.status-species .status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.status-species .status-text {
+  margin-right: 5px;
+}
+
+.status-species .species-text {
+  margin-left: 5px;
+}
+
+.location-episode {
+  margin: 10px 0 0 0;
+  font-size: 0.85em;
+  color: #aaa;
+}
+
+.location-episode p {
+  margin: 5px 0;
+}
+
+.status-alive .status-dot {
+  background-color: #28a745;
+}
+
+.status-dead .status-dot {
+  background-color: #dc3545;
+}
+
+.status-unknown .status-dot {
+  background-color: #6c757d;
+}

@@ -1,0 +1,83 @@
+/* src/components/CharacterDetail.css */
+.character-detail {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  /* background-color: #1a1a1a; */
+  min-height: 100vh;
+}
+
+.back-link {
+  display: inline-block;
+  color: #0011ff;
+  text-decoration: none;
+  margin-bottom: 20px;
+  font-size: 1.1em;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.detail-card {
+  display: flex;
+  background-color: #2d2d2d;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.detail-card img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+}
+
+.detail-info {
+  padding: 25px;
+  color: white;
+  flex-grow: 1;
+}
+
+.detail-info h1 {
+  margin-top: 0;
+  font-size: 2.2em;
+}
+
+.status-full {
+  font-size: 1.2em;
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+}
+
+.status-dot-large {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.status-alive .status-dot-large {
+  background-color: #28a745;
+}
+.status-dead .status-dot-large {
+  background-color: #dc3545;
+}
+.status-unknown .status-dot-large {
+  background-color: #6c757d;
+}
+
+.detail-info p {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+.detail-loading,
+.detail-error {
+  text-align: center;
+  padding: 40px 20px;
+  color: white;
+  font-size: 1.3em;
+}

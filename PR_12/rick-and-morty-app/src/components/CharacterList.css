@@ -1,0 +1,89 @@
+/* src/components/CharacterList.css */
+.character-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* background-color: #1a1a1a; */
+}
+
+.character-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.character-card {
+  display: flex;
+  background-color: #2d2d2d;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+  height: 180px;
+}
+
+.character-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.character-card img {
+  width: 150px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.character-info {
+  padding: 15px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.character-info h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.3em;
+  color: white;
+}
+
+.status-species {
+  display: flex;
+  align-items: center;
+  font-size: 0.95em;
+  color: #ccc;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.status-alive .status-dot {
+  background-color: #28a745;
+}
+.status-dead .status-dot {
+  background-color: #dc3545;
+}
+.status-unknown .status-dot {
+  background-color: #6c757d;
+}
+
+.location p {
+  margin: 6px 0 0 0;
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 30px;
+  color: white;
+  font-size: 1.2em;
+}

@@ -33,24 +33,27 @@ export default function Images() {
       {images.length === 0 ? (
         <p className="empty">Нет изображений. Прикрепите фото к задачам!</p>
       ) : (
-        <div className="images-grid">
+        <div className="image-list">
+          {" "}
           {images.map((img) => (
             <div key={img.task_id} className="image-card">
+              {/* Заголовок задачи */}
+              <h3>{img.task_title}</h3>
+
+              {/* Описание (если есть) */}
+              {img.description && <p>{img.description}</p>}
+
+              {/* Изображение */}
               <img
                 src={`${process.env.REACT_APP_API_URL}${img.image_url}`}
                 alt={`К задаче: ${img.task_title}`}
-                className="image-preview"
+                className="image-image"
               />
-              <div className="image-info">
-                <p>
-                  <strong>Задача:</strong> {img.task_title}
-                </p>
-                <p>
-                  <small>
-                    Добавлено:{" "}
-                    {new Date(img.created_at).toLocaleString("ru-RU")}
-                  </small>
-                </p>
+
+              {/* Дата добавления */}
+              <div className="image-time">
+                <strong>Добавлено:</strong>{" "}
+                {new Date(img.created_at).toLocaleString("ru-RU")}
               </div>
             </div>
           ))}

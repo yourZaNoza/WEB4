@@ -39,8 +39,8 @@ export default function Reminders() {
 
   return (
     <div className="reminders-page">
-      <Header />
       <main className="reminders-content">
+        <Header />
         <h1>
           <img
             src="/notification.svg"

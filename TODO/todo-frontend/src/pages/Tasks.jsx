@@ -80,11 +80,22 @@ export default function Tasks() {
 
   return (
     <div className="tasks-page">
-      {/* Верхняя панель */}
-      <Header />
-
       {/* Основной контент */}
       <main className="tasks-container">
+        <Header />
+
+        <div className="tasks-header">
+          <h1>Мои задачи</h1>
+          <button
+            className="create-task-btn"
+            onClick={() => {
+              setShowForm(true);
+              setEditingTask(null);
+            }}
+          >
+            + Создать задачу
+          </button>
+        </div>
         {showForm ? (
           <TaskForm
             task={editingTask} // может быть null (для создания) или объектом (для редактирования)

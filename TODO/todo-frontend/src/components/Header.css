@@ -1,5 +1,5 @@
 .header-container {
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 40px;
   font-family: "Segoe UI", "Helvetica Neue", sans-serif;
@@ -72,25 +72,4 @@
   display: flex;
   align-items: center;
   gap: 16px;
-}
-
-.create-task-btn {
-  padding: 10px 20px;
-  background: white;
-  color: #8d49f8;
-  border: 2px solid #641596;
-  border-radius: 30px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.create-task-btn:hover {
-  background: #edf2ff;
-  border-color: #8d49f8;
-  color: #8d49f8;
 }

@@ -42,18 +42,6 @@ export default function Header() {
           </Link>
         </nav>
         <div className="header-actions">
-          {/* Кнопка "Создать задачу" только на странице задач */}
-          {location.pathname === "/tasks" && (
-            <button
-              className="create-task-btn"
-              onClick={() => {
-                // Эту логику передадим через пропсы (см. ниже)
-                window.dispatchEvent(new Event("open-create-task-form"));
-              }}
-            >
-              + Создать задачу
-            </button>
-          )}
           <button className="admin-button">Админ-панель</button>
         </div>
       </header>

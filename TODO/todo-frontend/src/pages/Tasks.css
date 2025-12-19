@@ -7,7 +7,7 @@
 }
 
 .tasks-container {
-  padding: 40px;
+  padding: 0px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -24,6 +24,43 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 24px;
+}
+
+.tasks-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.tasks-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #3f0d5e;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.create-task-btn {
+  padding: 10px 20px;
+  background: white;
+  color: #8d49f8;
+  border: 2px solid #641596;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.create-task-btn:hover {
+  background: #edf2ff;
+  border-color: #8d49f8;
+  color: #8d49f8;
 }
 
 /* Стили для карточек задач (переопределяем из TaskItem.css) */

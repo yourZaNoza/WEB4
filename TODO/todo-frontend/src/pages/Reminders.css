@@ -1,0 +1,85 @@
+/* src/pages/Reminders.css */
+.reminders-page {
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+}
+
+.reminders-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.bell-icon {
+  height: 18px;
+  width: 18px;
+  filter: brightness(0) saturate(100%) invert(10%) sepia(40%) saturate(4916%)
+    hue-rotate(267deg) brightness(99%) contrast(106%);
+  margin-right: 24px;
+}
+
+.reminders-content h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #3f0d5e;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.loading,
+.empty {
+  text-align: center;
+  font-size: 18px;
+  color: #7f8c8d;
+  margin-top: 40px;
+}
+
+.reminders-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.reminder-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  border-left: 4px solid #7e57c2;
+}
+
+.reminder-card h3 {
+  font-size: 18px;
+  color: #2c3e50;
+  margin: 0 0 12px 0;
+}
+
+.reminder-card p {
+  color: #555;
+  margin: 0 0 16px 0;
+  line-height: 1.5;
+}
+
+.reminder-image {
+  max-width: 100%;
+  max-height: 160px;
+  margin: 12px 0;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.reminder-time {
+  font-size: 14px;
+  color: #7e57c2;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.completed-badge {
+  display: inline-block;
+  background: #e8f5e9;
+  color: #27ae60;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-top: 12px;
+}

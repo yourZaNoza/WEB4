@@ -1,0 +1,96 @@
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+}
+
+.app-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  height: 40px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-link {
+  color: #3f0d5e;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 32px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-link.active {
+  color: #8d49f8;
+}
+
+.bell-icon {
+  height: 18px;
+  width: 18px;
+  filter: brightness(0) saturate(100%) invert(10%) sepia(40%) saturate(4916%)
+    hue-rotate(267deg) brightness(99%) contrast(106%);
+  margin-top: 3px;
+}
+
+.bell-icon.active {
+  filter: brightness(0) saturate(100%) invert(29%) sepia(95%) saturate(1941%)
+    hue-rotate(247deg) brightness(97%) contrast(101%);
+}
+
+.admin-button {
+  padding: 10px 24px;
+  background: linear-gradient(135deg, #3f0d5e, #8d49f8);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.admin-button:hover {
+  opacity: 0.9;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.create-task-btn {
+  padding: 10px 20px;
+  background: white;
+  color: #8d49f8;
+  border: 2px solid #641596;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.create-task-btn:hover {
+  background: #edf2ff;
+  border-color: #8d49f8;
+  color: #8d49f8;
+}
